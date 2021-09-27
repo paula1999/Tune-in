@@ -7,6 +7,6 @@ En este proyecto se distinguen los siguientes tipos de usuario.
 
 Se han clasificado las historias de usuario con la etiqueta `user-stories`.
 
-- [HU1](https://github.com/paula1999/IV/issues/2). Como melómano, me gustaría recibir notificaciones acerca de mis artistas favoritos tales como la publicación de canciones o álbumes.
-- [HU2](https://github.com/paula1999/IV/issues/3). Como gestor, deseo obtener diariamente los datos de los oyentes tales como la música escuchada y su ubicación.
-- [HU3](https://github.com/paula1999/IV/issues/4). Como gestor, quiero diseñar una lista con las tendencias de los oyentes por cada ubicación concreta.
+- [HU1](https://github.com/paula1999/IV/issues/2). Como gestor, me gustaría realizar gráficas en las que pueda comparar las reproducciones de una misma canción distinguiendo las distintas localidades en las que se escucha.
+- [HU2](https://github.com/paula1999/IV/issues/3). Como gestor, dado que tengo que analizar los datos de la aplicación, deseo obtener diariamente la información relacionada a lo que reproducen los usuarios y desde dónde lo hacen.
+- [HU3](https://github.com/paula1999/IV/issues/4). Como gestor, quiero diseñar una lista con las tendencias de los oyentes por cada ubicación concreta. De esta forma, los gustos similares de los melómanos del mismo lugar se reproducirán.
