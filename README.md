@@ -3,7 +3,7 @@
 ## Descripción
 
 En este proyecto se ha desarrollado una aplicación para notificar 
-al usuario cuándo sus artistas favoritos publican una nueva canción.
+al usuario cuando sus artistas favoritos publican una nueva canción.
 Además, incorporará un sistema de sugerencias basado tanto en gustos similares entre los usuarios como la ubicación de estos.
 
 ## Issues

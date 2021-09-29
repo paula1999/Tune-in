@@ -11,3 +11,12 @@ Se han clasificado las historias de usuario con la etiqueta `user-stories`.
 - [HU2](https://github.com/paula1999/IV/issues/3). Como gestor, dado que tengo que analizar los datos de la aplicación, deseo obtener diariamente la información relacionada a lo que reproducen los usuarios y desde dónde lo hacen.
 - [HU3](https://github.com/paula1999/IV/issues/4). Como gestor, quiero diseñar una lista con las tendencias de los oyentes por cada ubicación concreta. De esta forma, los gustos similares de los melómanos del mismo lugar se reproducirán.
 - [HU4](https://github.com/paula1999/IV/issues/6). Como melómano, quisiera obtener las tendencias actuales de mi misma localidad y obtener recomendaciones de nueva música basada en mis reproducciones.
+
+## Roadmap
+
+A continuación se detalla la planificación del desarrollo del proyecto.
+
+| **Milestone** | **Descripción** |
+| ------------- | --------------- |
+| [Consulta y análisis de datos](https://github.com/paula1999/IV/milestone/5) | Permite obtener los datos relacionados con las tendencias en una misma localidad tales como las reproducciones y la ubicación, para poder realizar un estudio sobre ellos. |
+| [Sistema de sugerencias](https://github.com/paula1999/IV/milestone/2) | Se obtendrán gráficas a partir de los datos proporcionados por los melómanos y así realizar recomendaciones sobre música similar a sus gustos. |
