@@ -1,9 +1,9 @@
 class Song
-  attr_reader :nombre, :autores
+  attr_reader :name, :authors
 
-  def initialize(nombre, autores)
-    @nombre = nombre
-    @autores = autores
+  def initialize(name, authors)
+    @name = name
+    @authors = authors
     freeze
   end
 end
