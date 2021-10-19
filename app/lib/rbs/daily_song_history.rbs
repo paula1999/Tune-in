@@ -1,0 +1,10 @@
+class DailySongHistory
+  attr_reader postal_code: String
+  attr_reader history: Array[Song]
+
+  def initialize: (postal_code: String) -> void
+
+  def add_song: (song: Song) -> void
+
+  def store_json: -> void
+end
