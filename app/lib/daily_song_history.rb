@@ -1,9 +1,9 @@
 class DailySongHistory
   include(POSTCODE)
-  attr_reader :province, :history
+  attr_reader :postal_code, :history
 
-  def initialize(province)
-    @province = province
+  def initialize(postal_code)
+    @postal_code = postal_code
     @history = []
   end
 
