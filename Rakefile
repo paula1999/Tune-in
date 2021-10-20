@@ -13,4 +13,5 @@ end
 desc 'Tarea para comprobar la sintaxis de las entidades programadas'
 task :check do
     puts 'Comprobando la sintaxis de las entidades...'
+    exec 'rubocop'
 end
