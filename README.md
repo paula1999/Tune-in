@@ -8,4 +8,4 @@ Además, incorporará un sistema de sugerencias basado tanto en gustos similares
 
 ## Issues
 
-Descripción de las [historias de usuario](https://github.com/paula1999/IV/docs/historias_de_usuario.md) correspondientes a las issues de este repositorio.
+Descripción de las [historias de usuario](https://github.com/paula1999/Tune-in/blob/main/docs/historias_de_usuario.md) correspondientes a las issues de este repositorio.
