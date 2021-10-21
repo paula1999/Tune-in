@@ -46,5 +46,3 @@ Para comprobar si la sintaxis de las entidades programadas es correcta, ejecutar
 ```
 rake check
 ```
-
-Se ha utilizado la herramienta `rubocop` para realizar esta comprobación.
