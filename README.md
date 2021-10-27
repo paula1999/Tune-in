@@ -16,12 +16,17 @@ Haremos uso del [Rakefile](https://github.com/paula1999/Tune-in/blob/main/Rakefi
 
 ### Instalación
 
-Para ello, necesitaremos tener instalado `rake`, `gem` y `ruby-bundler` como se indica a continuación.
+Para ello, necesitaremos tener instalado RVM como se indica a continuación.
 
 ```
-sudo apt install rake
-sudo apt install gem
-sudo apt install ruby-bundler
+\curl -sSL https://get.rvm.io | bash -s stable
+```
+
+De esta forma, ya podemos instalar las herramientas necesarias.
+
+
+```
+gem install bundler
 ```
 
 
