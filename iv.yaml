@@ -1,2 +1,5 @@
 lenguaje: ruby
 entidad: app/lib/daily_song_history.rb
+automatizar:
+  fichero: Rakefile
+  orden: rake

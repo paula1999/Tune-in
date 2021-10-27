@@ -9,3 +9,45 @@ Además, incorporará un sistema de sugerencias basado tanto en gustos similares
 ## Issues
 
 Descripción de las [historias de usuario](https://github.com/paula1999/Tune-in/blob/main/docs/historias_de_usuario.md) correspondientes a las issues de este repositorio.
+
+## Automatización
+
+Haremos uso del [Rakefile](https://github.com/paula1999/Tune-in/blob/main/Rakefile). 
+
+### Instalación
+
+Para ello, necesitaremos tener instalado RVM como se indica a continuación.
+
+```
+\curl -sSL https://get.rvm.io | bash -s stable
+```
+
+De esta forma, ya podemos instalar las herramientas necesarias.
+
+
+```
+gem install bundler
+```
+
+
+Ahora, ya podremos instalar las dependencias ejecutando el siguiente comando.
+
+```
+rake installdeps
+```
+
+### Test
+
+Para testear que el código funciona correctamente, ejecutaremos lo siguiente.
+
+```
+rake test
+```
+
+### Check
+
+Para comprobar si la sintaxis de las entidades programadas es correcta, ejecutaremos
+
+```
+rake check
+```
