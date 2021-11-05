@@ -11,10 +11,6 @@ class DailySongHistory
     @history = []
   end
 
-  def get_history
-    @history
-  end
-
   def add_song(song) = @history << song
 
   def store_json(json)

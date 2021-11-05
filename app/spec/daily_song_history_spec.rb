@@ -13,7 +13,7 @@ RSpec.describe DailySongHistory do
             file = File.read('app/data/song_history.json')
             dailySongHistory.store_json(JSON.parse(file))
             songs = [song, song2]
-            history = dailySongHistory.get_history()
+            history = dailySongHistory.history
 
             for i in 0..history.size-1
                 expect(history[i].name).to eq (songs[i].name)
