@@ -44,6 +44,8 @@ Para testear que el código funciona correctamente, ejecutaremos lo siguiente.
 rake test
 ```
 
+Se ha utilizado la herramienta `rspec`. 
+
 ### Check
 
 Para comprobar si la sintaxis de las entidades programadas es correcta, ejecutaremos
