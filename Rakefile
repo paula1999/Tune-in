@@ -8,7 +8,7 @@ end
 
 desc 'Tarea para ejecutar testear el funcionamiento del codigo'
 RSpec::Core::RakeTask.new(:test) do |t|
-    t.pattern = "./app/spec/test_daily_song_history.rb"
+    t.pattern = "app/spec/daily_song_history_spec.rb"
   end
 
 desc 'Tarea para comprobar la sintaxis de las entidades programadas'

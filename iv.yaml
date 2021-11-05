@@ -3,3 +3,4 @@ entidad: app/lib/daily_song_history.rb
 automatizar:
   fichero: Rakefile
   orden: rake
+test: app/spec/daily_song_history_spec.rb
