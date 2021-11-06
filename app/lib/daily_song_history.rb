@@ -7,20 +7,20 @@ class DailySongHistory
   attr_reader :postal_code, :history
 
   def initialize(postal_code)
-    @postal_code = postal_code
+    @postal_code = PROVINCES[postal_code-1]
     @history = []
   end
 
   def add_song(song) = @history << song
 
   def store_json(json)
-    if json["postal_code"] != @postal_code
-      raise ArgumentError, 'Código postal incorrecto'
-    end
-
-    for song in json["songs"]
-      s = Song.new(song["name"], song["authors"])
-      add_song(s)
+    for user in json["users"]
+      if user["postal_code"] == @postal_code.to_s
+        for song in user["songs"]
+          s = Song.new(song["name"], song["authors"])
+          add_song(s)
+        end
+      end 
     end
   end
-end
+end            
