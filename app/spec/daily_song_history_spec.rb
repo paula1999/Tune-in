@@ -4,14 +4,25 @@ require 'rspec'
 require 'json'
 
 RSpec.describe DailySongHistory do
-    dailySongHistory = DailySongHistory.new(18)
     song = Song.new("Wake me up", ["Avicii"])
     song2 = Song.new("Scared to Be Lonely", ["Martin Garrix", "Dua Lipa"])
     song3 = Song.new("Regardless", ["RAYE", "Rudimental"])
     song4 = Song.new("Something Just Like This", ["Coldplay", "The Chainsmokers"])
 
     describe "#add" do
-        it 'add songs to history' do
+        it 'add songs to history' do 
+            dailySongHistory = DailySongHistory.new(18)
+            dailySongHistory.add_song(song)
+            history = dailySongHistory.history
+
+            expect(history[0].name).to eq (song.name)
+            expect(history[0].authors).to eq (song.authors)
+        end
+    end
+
+    describe "#addJSON" do
+        it 'add songs to history with JSON' do
+            dailySongHistory = DailySongHistory.new(18)
             file = File.read('app/data/song_history.json')
             dailySongHistory.store_json(JSON.parse(file))
             songs = [song, song2, song3, song4]
@@ -23,4 +34,6 @@ RSpec.describe DailySongHistory do
             end
         end
     end
+
+
 end
