@@ -23,4 +23,10 @@ class DailySongHistory
       end 
     end
   end
+
+  def to_s
+    for song in history
+      puts song.to_s
+    end
+  end
 end            

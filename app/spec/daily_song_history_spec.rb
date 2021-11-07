@@ -34,6 +34,4 @@ RSpec.describe DailySongHistory do
             end
         end
     end
-
-
 end
