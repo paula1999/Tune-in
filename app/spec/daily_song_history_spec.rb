@@ -1,13 +1,29 @@
 require_relative '../lib/daily_song_history.rb'
 require_relative '../lib/song.rb'
 require 'rspec'
-require 'json'
 
 RSpec.describe DailySongHistory do
     song = Song.new("Wake me up", ["Avicii"])
     song2 = Song.new("Scared to Be Lonely", ["Martin Garrix", "Dua Lipa"])
     song3 = Song.new("Regardless", ["RAYE", "Rudimental"])
     song4 = Song.new("Something Just Like This", ["Coldplay", "The Chainsmokers"])
+
+    describe "#postal_code" do
+        it 'Check postal code' do
+            dailySongHistory = DailySongHistory.new(18)
+            expect(dailySongHistory.postal_code.to_s).to eq ("granada")
+        end
+    end
+
+    describe "#history" do
+        it 'Check history' do
+            dailySongHistory = DailySongHistory.new(18)
+            dailySongHistory.add_song(song)
+            dailySongHistory.add_song(song2)
+
+            expect(dailySongHistory.history).to eq ([song, song2])
+        end
+    end
 
     describe "#top_25" do
         it 'top 25% songs in history' do
