@@ -9,29 +9,33 @@ RSpec.describe DailySongHistory do
     song3 = Song.new("Regardless", ["RAYE", "Rudimental"])
     song4 = Song.new("Something Just Like This", ["Coldplay", "The Chainsmokers"])
 
-    describe "#add" do
-        it 'add songs to history' do 
+    describe "#top_25" do
+        it 'top 25% songs in history' do
             dailySongHistory = DailySongHistory.new(18)
-            dailySongHistory.add_song(song)
-            history = dailySongHistory.history
 
-            expect(history[0].name).to eq (song.name)
-            expect(history[0].authors).to eq (song.authors)
-        end
-    end
+            # Añado canciones
 
-    describe "#addJSON" do
-        it 'add songs to history with JSON' do
-            dailySongHistory = DailySongHistory.new(18)
-            file = File.read('app/data/song_history.json')
-            dailySongHistory.store_json(JSON.parse(file))
-            songs = [song, song2, song3, song4]
-            history = dailySongHistory.history
-
-            for i in 0..history.size-1
-                expect(history[i].name).to eq (songs[i].name)
-                expect(history[i].authors).to eq (songs[i].authors)
+            for i in 1..5 do
+                dailySongHistory.add_song(song)
             end
+
+            for i in 1..4 do
+                dailySongHistory.add_song(song2)
+            end
+
+            for i in 1..8 do
+                dailySongHistory.add_song(song3)
+            end
+
+            for i in 1..3 do 
+                dailySongHistory.add_song(song4)
+            end
+
+            # Calculo el 25% de las canciones más escuchadas
+            top = dailySongHistory.get_top(0.25)
+
+            expect(top[0].to_s).to eq (song.to_s)
+            expect(top[1].to_s).to eq (song3.to_s)
         end
     end
 end
