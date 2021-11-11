@@ -44,7 +44,7 @@ Para testear que el código funciona correctamente, ejecutaremos lo siguiente.
 rake test
 ```
 
-Se ha utilizado la herramienta `rspec`. 
+Se ha utilizado la herramienta `rspec`, cuya información se puede encontrar [aquí](https://github.com/paula1999/Tune-in/blob/main/docs/test_runners.md)
 
 ### Check
 
