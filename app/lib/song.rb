@@ -8,6 +8,6 @@ class Song
   end
 
   def to_s
-    return "Name: #{@name}, \t Authors: #{@authors}"
+    return "Name: #{@name}, Authors: #{@authors}"
   end
 end
