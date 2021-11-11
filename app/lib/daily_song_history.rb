@@ -25,7 +25,7 @@ class DailySongHistory
     for elem in @history
       if !read.include?(elem) # Si no se ha leido la canción antes
         read.append(elem)
-        c = @history.count(elem) # Contar el número de apariciones
+        c = @history.count(elem) # Contar el número de apariciones de la canción
 
         if c * 1.0/@history.size >= percent # Si supera el porcentaje indicado
           top.append(elem)
