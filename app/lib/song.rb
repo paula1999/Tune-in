@@ -6,4 +6,8 @@ class Song
     @authors = authors
     freeze
   end
+
+  def to_s
+    return "Name: #{@name}, Authors: #{@authors}"
+  end
 end
