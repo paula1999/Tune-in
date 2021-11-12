@@ -10,14 +10,14 @@ RSpec.describe DailySongHistory do
 
     describe "#postal_code" do
         it 'Check postal code' do
-            dailySongHistory = DailySongHistory.new(18)
+            dailySongHistory = DailySongHistory.new("granada")
             expect(dailySongHistory.postal_code.to_s).to eq ("granada")
         end
     end
 
     describe "#history" do
         it 'Check history' do
-            dailySongHistory = DailySongHistory.new(18)
+            dailySongHistory = DailySongHistory.new("granada")
             dailySongHistory.add_song(song)
             dailySongHistory.add_song(song2)
 
@@ -27,7 +27,7 @@ RSpec.describe DailySongHistory do
 
     describe "#top_25" do
         it 'top 25% songs in history' do
-            dailySongHistory = DailySongHistory.new(18)
+            dailySongHistory = DailySongHistory.new("granada")
 
             # Añado canciones
 

@@ -8,7 +8,7 @@ class DailySongHistory
   attr_reader :postal_code, :history
 
   def initialize(postal_code)
-    @postal_code = PROVINCES[postal_code-1]
+    @postal_code = postal_code
     @history = []
   end
 
