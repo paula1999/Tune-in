@@ -11,7 +11,7 @@ RSpec.describe DailySongHistory do
     describe "#postal_code" do
         it 'Check postal code' do
             dailySongHistory = DailySongHistory.new("granada")
-            expect(dailySongHistory.postal_code.to_s).to eq ("granada")
+            expect(dailySongHistory.postal_code).to eq ("granada")
         end
     end
 
