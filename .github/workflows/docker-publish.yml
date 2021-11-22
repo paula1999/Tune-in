@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - objetivo-5
+      - objetivo-5s
 
 jobs:
   build:
@@ -31,5 +31,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: latest
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
