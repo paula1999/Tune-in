@@ -1,4 +1,4 @@
-FROM ruby:3.0.2-alpine
+FROM ruby:3.1-rc-alpine
 
 LABEL maintainer="pvillanunez@correo.ugr.es"
 
