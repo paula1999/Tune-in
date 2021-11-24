@@ -8,11 +8,13 @@ RUN adduser -D Tune-in_app \
     
 USER Tune-in_app
 
-WORKDIR /app/test
+WORKDIR /home/Tune-in_app
 
-COPY --chown=Tune-in_app Gemfile Gemfile.lock /app/test/
+COPY Gemfile /home/Tune-in_app/
 
 RUN gem install bundler \
     && bundle install
+
+WORKDIR /app/test
 
 CMD ["rake", "test"]
