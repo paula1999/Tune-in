@@ -8,7 +8,7 @@ En [esta página](https://hub.docker.com/_/ruby) podemos encontrar las distintas
 También se pueden encontrar las distintas versiones que ofrece, cada una para un caso de uso específico: 
 `ruby:<version>`, `ruby:<version>-slim` y `ruby:<version>-alpine`.
 
-Usaremos la versión `3.1`, pues es la última versión estable y ofrece mantenimiento.
+Usaremos la versión `3.1`, pues quiero que se testee con la última versión estable y ofrece mantenimiento.
 
 La versión por defecto, no contiene paquetes adicionales más alla de los que vienen con la imagen, por lo que será
 necesario especificarlos para minimizar roturas cuando haya nuevas versiones. 
