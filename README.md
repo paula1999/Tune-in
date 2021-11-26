@@ -53,3 +53,12 @@ Para comprobar si la sintaxis de las entidades programadas es correcta, ejecutar
 ```
 rake check
 ```
+
+### Contenedor
+
+Se ha diseñado un contenedor, usando Docker, para aislar la ejecución de la aplicación de forma que sea mucho más fácil desplegarla.
+
+Para ello, se ha creado el archivo [Dockerfile](https://github.com/paula1999/Tune-in/blob/main/Dockerfile). La justificación de esta elección se puede encontrar [aquí](https://github.com/paula1999/Tune-in/blob/main/docs/docker.md)
+
+
+Además, se ha añadido una [Github Action](https://github.com/paula1999/Tune-in/blob/main/.github/workflows/docker-publish.yml) para publicar la imagen a [Docker Hub](https://hub.docker.com/repository/docker/paula1999/tune-in).
