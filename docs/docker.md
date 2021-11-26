@@ -28,4 +28,4 @@ Para realizar la elección del contenedor, he probado con varias versiones de la
 La versión por defecto y la `slim` no nos servirán para este proyecto, pues carecen de los paquetes necesarios y 
 ofrecen tamaños de imágenes muy grandes.
 
-En conclusión, se ha decidido elegir la versión `alpine`, en concreto la última, `3.1-rc-alpine`, pues es la última versión 
+En conclusión, se ha decidido elegir la versión `alpine`, en concreto la última, `3.1-rc-alpine`, pues es la última versión.
