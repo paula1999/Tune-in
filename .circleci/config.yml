@@ -4,7 +4,7 @@ version: 2.1
 # Define a job to be invoked later in a workflow.
 jobs:
   test:
-    docker:
+    machine:
       - image: ubuntu-2004:202111-01
     steps:
       - checkout
