@@ -3,7 +3,7 @@ version: 2.1
 
 # Define a job to be invoked later in a workflow.
 jobs:
-  # TODO test_languaje:
+  # TODO test_language:
 
   test_docker:
     machine:
