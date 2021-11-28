@@ -5,7 +5,7 @@ version: 2.1
 jobs:
   test-docker:
     machine:
-      - image: ubuntu-2004:202111-01
+      image: ubuntu-2004:202111-01
     steps:
       - checkout
       - run: docker run -t -v `pwd`:/app/test paula1999/tune-in
