@@ -4,3 +4,4 @@ automatizar:
   fichero: Rakefile
   orden: rake
 test: app/spec/daily_song_history_spec.rb
+CI: .circleci/config.yml
