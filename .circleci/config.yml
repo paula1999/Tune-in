@@ -9,9 +9,12 @@ jobs:
                 type: string
         docker:
             - image: cimg/ruby:<< parameters.ruby-version >>
+                auth:
+                    username: $DOCKER_USERNAME
+                    password: $DOCKER_PASSWORD
         steps:
             - checkout
-            - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+            #- run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
             - run: bundle install
             - run: rake test
     
