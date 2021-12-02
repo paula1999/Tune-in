@@ -11,8 +11,7 @@ jobs:
             - image: cimg/ruby:<< parameters.ruby-version >>
         steps:
             - checkout
-            - run: rake --version
-            - run: rake installdeps
+            - run: rake installdeps --trace
             - run: rake test
     
     test_docker:
