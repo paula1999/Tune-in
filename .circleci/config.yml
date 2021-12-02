@@ -14,7 +14,7 @@ jobs:
     parameters:
       ruby-version:
         type: string
-    mahine:
+    machine:
       image: cimg/ruby:<< parameters.ruby-version >>
     steps:
       - checkout
