@@ -11,6 +11,7 @@ jobs:
             - image: cimg/ruby:<< parameters.ruby-version >>
         steps:
             - checkout
+            - run: docker login -u $USER -p $PASSWORD
             - run: bundle install
             - run: rake test
     
