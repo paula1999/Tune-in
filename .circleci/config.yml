@@ -11,7 +11,7 @@ jobs:
             - image: cimg/ruby:<< parameters.ruby-version >>
         steps:
             - checkout
-            - run: bundle -v
+            - run: rake --version
             - run: rake installdeps
             - run: rake test
     
