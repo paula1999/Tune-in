@@ -3,21 +3,6 @@ version: 2.1
 
 # Define a job to be invoked later in a workflow.
 jobs:
-  test_language_version:
-    parameters:
-      ruby-version:
-        type: string
-    docker:
-      - image: cimg/ruby:<< parameters.ruby-version >>
-        auth:
-          username: $DOCKER_USERNAME
-          password: $DOCKER_PASSWORD
-    steps:
-      - checkout
-      #- run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-      - run: bundle install
-      - run: rake test
-    
   test_docker:
     machine:
       image: ubuntu-2004:202111-01
@@ -30,8 +15,4 @@ workflows:
   ci:
     # Jobs to run
     jobs:
-      - test_language_version:
-          matrix:
-            parameters:
-              ruby-version: ["3.0", "3.1"]
       - test_docker
