@@ -24,4 +24,4 @@ y lo he [configurado](https://github.com/paula1999/Tune-in/blob/main/.circleci/c
 tiene una configuración sencilla y permite conectarse con GitHub. Para ello, se ha tenido 
 que configurar para que use el checks API. Por lo que este sistema también cumple con los requisitos para ser considerado 
 como servicio de integración continua. En mi [perfil](https://app.circleci.com/pipelines/github/paula1999/Tune-in)
-se puede encontrar el historial de los tests.
+se puede encontrar el historial de los tests realizados.
