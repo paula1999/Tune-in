@@ -1,0 +1,11 @@
+language: ruby
+
+rvm:
+  - 3.0
+  - "ruby-head"
+
+before_install:
+  - bundle install
+
+script:
+  - rake test

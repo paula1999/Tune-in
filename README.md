@@ -62,3 +62,10 @@ Para ello, se ha creado el archivo [Dockerfile](https://github.com/paula1999/Tun
 
 
 Además, se ha añadido una [Github Action](https://github.com/paula1999/Tune-in/blob/main/.github/workflows/docker-publish.yml) para publicar la imagen a [Docker Hub](https://hub.docker.com/repository/docker/paula1999/tune-in).
+
+
+### Integración continua
+
+Se ha utilizado el servicio [Circle CI](https://circleci.com/) para automatizar el lanzamiento de los tests.
+
+Para ello, hemos [configurado](https://github.com/paula1999/Tune-in/blob/main/.circleci/config.yml) este servicio y su justificación se puede encontrar [aquí](https://github.com/paula1999/Tune-in/blob/main/docs/continuous_integration.md)
